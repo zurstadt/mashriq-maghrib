@@ -63,6 +63,13 @@
     font: 0.8rem/1.6 -apple-system, 'Segoe UI', sans-serif; color: var(--muted);
     border-top: 1px solid var(--line); width: 100%;
   }
+  .logos {
+    display: flex; align-items: center; justify-content: center; gap: 2rem;
+    flex-wrap: wrap; margin: 0.4rem 0 1.2rem; padding: 0.9rem 1rem;
+    background: #ffffff; border: 1px solid var(--line); border-radius: 10px;
+  }
+  .logos img { height: 52px; width: auto; max-width: 30%; object-fit: contain; }
+  footer p { margin: 0 0 0.6rem; }
 </style>
 </head>
 <body>
@@ -106,9 +113,18 @@
   <a href="https://github.com/zurstadt/qirat-shiny-app">github.com/zurstadt/qirat-shiny-app</a>.</p>
 </main>
 <footer>
-  This research is part of the QurCan project at Leiden University, funded by the European
-  Research Council (ERC Grant agreement No. 101044127). Views and opinions expressed are those
-  of the author only and do not necessarily reflect those of the European Union or the ERC.
+  <div class="logos">
+    <img src="images/erc_logo.png" alt="European Research Council">
+    <img src="images/qurxan_logo.png" alt="QurCan project">
+    <img src="images/leiden_logo.png" alt="Leiden University">
+  </div>
+  <p>Funded by the European Research Council (ERC) under the European Union&rsquo;s Horizon
+  Europe programme (Grant Agreement No. 101044127, QurCan), at Leiden University. Views and
+  opinions expressed are those of the author only and do not necessarily reflect those of the
+  European Union or the ERC.</p>
+  <p>This work is licensed under a
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a>
+  license.</p>
 </footer>
 </body>
 </html>
